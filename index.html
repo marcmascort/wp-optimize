@@ -1,112 +1,294 @@
 <html>
-  <head>
-    <title>WP Optimize - Artic studio</title>
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <head>
+        <title>WP Optimize - Artic studio</title>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <!-- reveal.js CSS theme and local overrides -->
-    <link rel="stylesheet" href="reveal.js/css/reveal.css"/>
-    <link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme"/>
-    <link rel="stylesheet" href="css/reveal-override.css"/>
+        <!-- reveal.js CSS theme and local overrides -->
+        <link rel="stylesheet" href="reveal.js/css/reveal.css"/>
+        <link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme"/>
+        <link rel="stylesheet" href="css/reveal-override.css"/>
 
-    <!-- For syntax highlighting -->
-    <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css" />
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css" />
 
-    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
-    <script>
-      document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-    </script>
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section id="intro"
-                 data-markdown="markdown/intro.md"
-                 data-separator="^\n\n\n"
-                 data-separator-vertical="^\n\n"
-                 data-separator-notes="^Note:">
-        </section>
-        <section id="main"
-                 data-markdown="markdown/main.md"
-                 data-separator="^\n\n\n"
-                 data-separator-vertical="^\n\n"
-                 data-separator-notes="^Note:">
-        </section>
-        <section id="conclusion"
-                 data-markdown="markdown/conclusion.md"
-                 data-separator="^\n\n\n"
-                 data-separator-vertical="^\n\n"
-                 data-separator-notes="^Note:">
-        </section>
-      </div>
-    </div>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
 
-    <script src="reveal.js/lib/js/head.min.js"></script>
-    <script src="reveal.js/js/reveal.js"></script>
+                <section id="intro">
+                    <h1>OPTIMIZE<br>WP</h1>
+                </section>
 
-    <script>
-// Full list of configuration options available here:
-// https://github.com/hakimel/reveal.js#configuration
-Reveal.initialize({
-    controls: false,
-    progress: false,
-    history: true,
-    center: true,
+                <section id="optimization">
+                    <h2>Optimization</h2>
+                    <ul>
+                        <li>
+                            On Server
+                            <ul>
+                                <li>WP Configuration</li>
+                            </ul>
+                        </li>
+                        <li>
+                            On Browser
+                        </li>
+                    </ul>
+                </section>
 
-    // Parallax background image
-    parallaxBackgroundImage: 'images/background.jpg',
+                <section id="server">
 
-    // Parallax background size
-    parallaxBackgroundSize: '2100px 900px', // CSS syntax, e.g. "2100px 900px"
+                    <section>
+                        <h1>ON SERVER</h1>
+                    </section>
 
-    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-    transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+                    <section>
+                        <h2>Hosting</h2>
+                        <ul>
+                            <li>Shared</li>
+                            <li>Virtual / Dedicated</li>
+                        </ul>
+                    </section>
 
-    menu: {
-        themes: false,
-        transitions: false,
-        openButton: false,
-        openSlideNumber: true,
-        markers: true
-    },
+                    <section>
+                        <h2>Software performance</h2>
+                        <ul>
+                            <li>Apache</li>
+                            <li>MySQL / MariaDB</li>
+                            <li>PHP</li>
+                            <li>Wordpress</li>
+                        </ul>
+                    </section>
 
-    keyboard: {
-         40: 'next',
-         38: 'prev'
-    },
+                    <section>
+                        <h2>Server Load</h2>
+                        <ul>
+                            <li>Traffic amount</li>
+                            <li>Assets size</li>
+                            <li>Cache headers</li>
+                        </ul>
+                    </section>
 
-    multiplex: {
-        secret: null,
-        id: 'insert-id-here',
-        url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh'
-    },
+                    <section>
+                        <h2>Web speed</h2>
+                        <ul>
+                            <li>Server network speed</li>
+                            <li>Geographical distance - CDN</li>
+                            <li>Assets size</li>
+                            <li>Gzip compression</li>
+                        </ul>
+                    </section>
 
-    // Optional libraries used to extend on reveal.js
-    dependencies: [
-        { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-        { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-        { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-        { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-        { src: 'reveal.js/plugin/multiplex/master.js', async: true },
-        { src: 'reveal.js-menu/menu.js', async: true, condition: function() { return !!document.body.classList; } },
-        { src: '//cdn.socket.io/socket.io-1.3.5.js', async: true },
-    ]
-});
+                    <section>
+                        <h2>Cache</h2>
+                        <ul>
+                            <li>HTTP Headers</li>
+                            <li>HTTP Cache</li>
+                            <li>DB Cache</li>
+                            <li>PHP Cache</li>
+                            <li>WP Cache</li>
+                        </ul>
+                    </section>
 
-      // If we wanted mouse clicks to advance to next / previous slides, this is
-      // how we'd do it:
+                </section>
 
-      // window.addEventListener("mousedown", handleClick, false);
-      // window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
-      function handleClick(e) {
-          e.preventDefault();
-          if(e.button === 0) Reveal.next();
-          // if(e.button === 2) Reveal.prev();
-      }
-    </script>
-  </body>
+                <section id="server-wp">
+
+                    <section>
+                        <h1>WORDPRESS <br>ON SERVER</h1>
+                    </section>
+
+                    <section>
+                        <h2>Basic concepts</h2>
+                        <ul>
+                            <li>Actions</li>
+                            <li>Filters</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Extend abuse</h2>
+                        <ul>
+                            <li>Plugins</li>
+                            <li>Theme framework</li>
+                            <li>Page builders</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Standard themes</h2>
+                        <ul>
+                            <li>Page builders</li>
+                            <li>Unused utilities</li>
+                            <li>Unused options</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Environments</h2>
+                        <ul>
+                            <li>Frontend</li>
+                            <li>Backend</li>
+                            <li>API</li>
+                            <li><i>Console</i></li>
+                        </ul>
+                    </section>
+
+                </section>
+
+                <section id="browser">
+
+                    <section>
+                        <h1>ON BROWSER</h1>
+                    </section>
+
+                    <section>
+                        <h2>HTTP Requests</h2>
+                        <ul>
+                            <li>Many CSS</li>
+                            <li>Many JS</li>
+                            <li>Many Hosts</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Blocking Content</h2>
+                        <ul>
+                            <li>JS on head</li>
+                            <li>Async</li>
+                            <li>Inline</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Minify</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Images</h2>
+                        <ul>
+                            <li>Optimize size</li>
+                            <li>Scale</li>
+                            <li>Specify dimensions</li>
+                            <li>Sprites</li>
+                            <li>SVGs</li>
+                            <li>Font for icons</li>
+                        </ul>
+                    </section>
+
+                </section>
+
+                <section id="plugins">
+                    <h2>Plugins</h2>
+                    <ul>
+                        <li>WP Super Cache</li>
+                        <li>W3 Total Cache</li>
+                        <li>EWWW Image Optimizer</li>
+                    </ul>
+                </section>
+
+                <section id="tools">
+                    <h2>TOOLS</h2>
+                    <ul>
+                        <li>Google PageSpeed Insights</li>
+                        <li>Gtmetrix</li>
+                    </ul>
+                </section>
+
+                <section id="goodbye">
+                    <h1>:)</h1>
+                </section>
+
+
+            </div>
+        </div>
+
+        <script src="reveal.js/lib/js/head.min.js"></script>
+        <script src="reveal.js/js/reveal.js"></script>
+
+        <script>
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: false,
+                history: true,
+                center: true,
+
+                // Parallax background image
+                parallaxBackgroundImage: 'images/background.jpg',
+
+                // Parallax background size
+                parallaxBackgroundSize: '2100px 900px', // CSS syntax, e.g. "2100px 900px"
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+                menu: {
+                    themes: false,
+                    transitions: false,
+                    openButton: false,
+                    openSlideNumber: true,
+                    markers: true
+                },
+
+                keyboard: {
+                    40: 'next',
+                    38: 'prev'
+                },
+
+                multiplex: {
+                    secret: null,
+                    id: 'insert-id-here',
+                    url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh'
+                },
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    {src: 'reveal.js/lib/js/classList.js', condition: function () {
+                            return !document.body.classList;
+                        }},
+                    {src: 'reveal.js/plugin/markdown/marked.js', condition: function () {
+                            return !!document.querySelector('[data-markdown]');
+                        }},
+                    {src: 'reveal.js/plugin/markdown/markdown.js', condition: function () {
+                            return !!document.querySelector('[data-markdown]');
+                        }},
+                    {src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function () {
+                            hljs.initHighlightingOnLoad();
+                        }},
+                    {src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function () {
+                            return !!document.body.classList;
+                        }},
+                    {src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function () {
+                            return !!document.body.classList;
+                        }},
+                    {src: 'reveal.js/plugin/multiplex/master.js', async: true},
+                    {src: 'reveal.js-menu/menu.js', async: true, condition: function () {
+                            return !!document.body.classList;
+                        }},
+                    {src: '//cdn.socket.io/socket.io-1.3.5.js', async: true},
+                ]
+            });
+
+            // If we wanted mouse clicks to advance to next / previous slides, this is
+            // how we'd do it:
+
+            // window.addEventListener("mousedown", handleClick, false);
+            // window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+            function handleClick(e) {
+                e.preventDefault();
+                if (e.button === 0)
+                    Reveal.next();
+                // if(e.button === 2) Reveal.prev();
+            }
+        </script>
+    </body>
 </html>

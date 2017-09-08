@@ -1,9 +1,14 @@
-@import url(//fonts.googleapis.com/css?family=Cabin:400,700);
-@import url(//fonts.googleapis.com/css?family=Special+Elite:400,700);
-@import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700");
 
 .reveal {
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    }
+}
+/*.reveal {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     font-weight: normal;
     color: #555555;
 
@@ -12,13 +17,13 @@
     }
 
     section img {
-        /* Disable background 4px border around images */
+         Disable background 4px border around images 
         border: none;
         background: none;
-        /* Disable box shadow around images */
+         Disable box shadow around images 
 	box-shadow: none;
 
-        /* Blow image up to full screen size */
+         Blow image up to full screen size 
         height: auto;
         width: 100%;
         max-width: 80%;
@@ -26,14 +31,14 @@
         margin: 2%;
     }
 
-    /* Make sure keyboard shortcuts help is visible */
+     Make sure keyboard shortcuts help is visible 
     .overlay-help .viewport {
         th, td {
             color: white;
         }
     }
 
-    /* Blow iframe up to full screen size */
+     Blow iframe up to full screen size 
     iframe {
         height: 90%;
         width: 100%;
@@ -69,7 +74,7 @@
     }
 
     h1, h2, h3, h4, h5, h6 {
-        font-family: "Cabin", sans-serif;
+        font-family: 'Montserrat', Helvetica, Arial, sans-serif;
         font-weight: bold;
         text-transform: uppercase;
 	strong {
@@ -106,19 +111,18 @@
     }
 
     a {
-        font-family: "Special Elite", monospace !important;
         white-space: nowrap;
     }
 
     code {
-        font-family: "Special Elite", monospace !important;
+        font-family: 'Montserrat', Helvetica, Arial, sans-serif;
         color: black !important;
         text-shadow: none;
         text-transform: none;
     }
 
     pre code {
-        font-family: "Source Code Pro", monospace !important;
+        font-family: 'Montserrat', Helvetica, Arial, sans-serif;
         background: inherit !important;
         text-shadow: none;
         text-transform: none;
@@ -164,7 +168,7 @@
         position: absolute;
         color: red !important;
         font-size: 6em !important;
-        font-family: "Special Elite" !important;
+        font-family: 'Montserrat', Helvetica, Arial, sans-serif;
         transform: rotate(-45deg);
         position:absolute;
         left:50%;
@@ -181,4 +185,4 @@
         font-size: small;
     }
 }
-
+*/
